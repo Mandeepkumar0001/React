@@ -1,7 +1,9 @@
-
+import Chai from './Chai'
 function App() {
   return (
-    <h1>MANDEEP KUMAR & Sandeep Kumar</h1>
+    <>
+    <Chai />
+    </>
   );
 }
 export default App;
