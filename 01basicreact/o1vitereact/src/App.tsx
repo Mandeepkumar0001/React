@@ -1,7 +1,7 @@
 
 function App() {
   return (
-    <h1>Mandeep Kumar with vite</h1>
+    <h1>Mandeep Kumar with vite </h1>
   )
 }
 
