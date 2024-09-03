@@ -18,22 +18,25 @@ function MyApp(){
 //     },
 //     children: 'click me to visit google'
 // }
+const anotherElement= (
+    <a href="https://google.com" target='_blank'>Visit Google</a>
+)
+const anotherUser="writer Mandeep Mukhda"
 
 const reactElement =  React.createElement(
     'a',
     {
         href: 'https://google.com',target: '_blank'
     },
-    'click me to visit google'
-)
+    'click me to visit google ',
+    anotherUser
+    // anotherElement
 
-const anotherElement= (
-    <a href="https://google.com" target='_blank'>Visit Google</a>
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     // <MyApp/>
-    // reactElement
+    reactElement
     // anotherElement
-    <App/>
+    // <App/>
 )
