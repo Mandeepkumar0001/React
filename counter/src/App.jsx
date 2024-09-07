@@ -8,7 +8,7 @@ function App() {
 
   // let counter = 15
 
-  const addValue=()=>{
+  const addValue=()=>{ 
     // console.log("clicked",counter);
     // counter=counter+1;
     if(counter<20){
