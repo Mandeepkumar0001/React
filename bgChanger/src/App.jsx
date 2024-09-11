@@ -8,51 +8,51 @@ function App() {
       <div className="w-full h-screen duration-200"
       style={{backgroundColor: color}}
       >
-        <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
-          <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
+        <div className="fixed inset-x-0 flex flex-wrap justify-center px-2 bottom-12">
+          <div className="flex flex-wrap justify-center gap-3 px-3 py-2 bg-white shadow-lg rounded-3xl">
             <button
             onClick={()=> setColor("red")}
-            className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "red"}}
+            className="px-4 py-1 text-white rounded-full shadow-lg outline-none" style={{backgroundColor: "red"}}
             >RED</button>
             <button
             onClick={()=> setColor("green")} 
-            className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "green"}}
+            className="px-4 py-1 text-white rounded-full shadow-lg outline-none" style={{backgroundColor: "green"}}
             >GREEN</button>
             <button
             onClick={()=> setColor("blue")}
-            className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "blue"}}
+            className="px-4 py-1 text-white rounded-full shadow-lg outline-none" style={{backgroundColor: "blue"}}
             >BLUE</button>
             <button
             onClick={()=> setColor("black")}
-            className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "black"}}
+            className="px-4 py-1 text-white rounded-full shadow-lg outline-none" style={{backgroundColor: "black"}}
             >BLACK</button>
             <button
             onClick={()=> setColor("yellow")}
-            className="outline-none px-4 py-1 rounded-full text-black shadow-lg" style={{backgroundColor: "yellow"}}
+            className="px-4 py-1 text-black rounded-full shadow-lg outline-none" style={{backgroundColor: "yellow"}}
             >YELLOW</button>
             <button
             onClick={()=> setColor("purple")}
-            className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "purple"}}
+            className="px-4 py-1 text-white rounded-full shadow-lg outline-none" style={{backgroundColor: "purple"}}
             >PURPLE</button>
             <button
             onClick={()=> setColor("pink")}
-            className="outline-none px-4 py-1 rounded-full text-black shadow-lg" style={{backgroundColor: "pink"}}
+            className="px-4 py-1 text-black rounded-full shadow-lg outline-none" style={{backgroundColor: "pink"}}
             >PINK</button>
             <button
             onClick={()=> setColor("white")}
-            className="outline-none px-4 py-1 rounded-full text-black shadow-lg" style={{backgroundColor: "white"}}
+            className="px-4 py-1 text-black rounded-full shadow-lg outline-none" style={{backgroundColor: "white"}}
             >WHITE</button>
             <button
             onClick={()=> setColor("gray")}
-            className="outline-none px-4 py-1 rounded-full text-black shadow-lg" style={{backgroundColor: "gray"}}
+            className="px-4 py-1 text-black rounded-full shadow-lg outline-none" style={{backgroundColor: "gray"}}
             >GRAY</button>
             <button
             onClick={()=> setColor("lavender")}
-            className="outline-none px-4 py-1 rounded-full text-black shadow-lg" style={{backgroundColor: "lavender"}}
+            className="px-4 py-1 text-black rounded-full shadow-lg outline-none" style={{backgroundColor: "lavender"}}
             >LAVENDER</button>
             <button
             onClick={()=> setColor("olive")}
-            className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "olive"}}
+            className="px-4 py-1 text-white rounded-full shadow-lg outline-none" style={{backgroundColor: "olive"}}
             >OLIVE</button>
           </div>
         </div>
