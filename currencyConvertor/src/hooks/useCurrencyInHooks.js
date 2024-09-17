@@ -1,15 +1,15 @@
-import {useEffect , useState} from "react"
+import { useState, useEffect } from "react";
 
-function useCurrencyInfo(currency){
-    const [data, setData] = useState({})
-    useEffect(()=>{
-        fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`)
-        .then((res)=>res.json())
-        .then((res)=> setData(res[currency]))
-        console.log(data);
-    }, [currency])
-    console.log(data);
+export function useCurrencyInfo(currency) {
+    const [data, setData] = useState({});
+    useEffect(() => {
+        fetch(`https://v6.exchangerate-api.com/v6/2bdc44aa6cf04a5687af9f269a7b3a5b/latest/${currency}`)
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);  // Check the structure of the response
+                setData(data.conversion_rates);  // Modify according to the API response structure
+            })
+            .catch((err) => console.error("Failed to fetch data:", err));
+    }, [currency]);
     return data;
 }
-
-export default useCurrencyInfo;
